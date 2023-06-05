@@ -1,5 +1,3 @@
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -34,15 +32,13 @@ So the same animations that were implemented using CSS were created using pure R
 - [React Native Async Storage](https://react-native-async-storage.github.io/async-storage/) - React Native AsyncStorage is a simple, unencrypted, asynchronous, persistent, storage system which stores the data globally in the app;
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale;
 
-
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
-
 ### Requirements
 
-Configure you machine following the steps of the official React Native documentation 
+Configure you machine following the steps of the official React Native documentation
 
 [React Native Environment (Android/iOS)](https://reactnative.dev/docs/environment-setup)
 
@@ -66,7 +62,6 @@ rocketseat-basic
 ├── package.json
 └── README.md
 ```
-
 
 ## License
 
