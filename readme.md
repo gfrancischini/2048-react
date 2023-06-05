@@ -1,14 +1,21 @@
 <!-- PROJECT LOGO -->
+
 <br />
 <p align="center">
-<img src="https://www.pngkey.com/png/detail/768-7684680_file-2048-logo-svg-2048-icon.png" alt="Logo">
-
-  <h3 align="center">2048 React Native 0.66 with Animations</h3>
+  <img src="./doc/2048_logo.png" alt="Logo">
+  <h3 align="center">2048 React Native Expo with Animations</h3>
+  
 </p>
+
+[<video src='./doc/slide_game_2048.mov' width="600">](https://github.com/gfrancischini/2048-react/assets/12496146/d2e05041-1666-4e9b-a8e0-836518b6ed42)
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
+
+
+
+
 
 - [Table of Contents](#table-of-contents)
 - [About](#about)
@@ -29,6 +36,7 @@ So the same animations that were implemented using CSS were created using pure R
 ### Developed With
 
 - [React Native](http://facebook.github.io/react-native/) - React Native is a framework that lets you create truly native apps and doesn't compromise your users' experiences;
+- [Expo](https://expo.dev)
 - [React Native Async Storage](https://react-native-async-storage.github.io/async-storage/) - React Native AsyncStorage is a simple, unencrypted, asynchronous, persistent, storage system which stores the data globally in the app;
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale;
 
@@ -41,27 +49,8 @@ So the same animations that were implemented using CSS were created using pure R
 Configure you machine following the steps of the official React Native documentation
 
 [React Native Environment (Android/iOS)](https://reactnative.dev/docs/environment-setup)
+[Expo](https://expo.dev)
 
-### Project Structure
-
-This project is structure like this:
-
-```bash
-rocketseat-basic
-├── app/ -- React Native view and components
-├── gameEngine/ -- 2048 game logic
-├── .editorconfig
-├── .eslintrc.json
-├── .gitignore
-├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
-├── index.js
-├── jsconfig.js
-├── LICENSE
-├── package.json
-└── README.md
-```
 
 ## License
 

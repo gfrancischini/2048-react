@@ -1,11 +1,13 @@
 import React from 'react';
-import {DimensionsProvider} from './app/DimensionsProvider';
-import {Game} from './app/Game';
-
-export const App = () => {
+import {DimensionsProvider} from './src/app/DimensionsProvider';
+import {Game} from './src/app/Game';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+export default () => {
   return (
-    <DimensionsProvider>
-      <Game />
-    </DimensionsProvider>
+    <SafeAreaProvider>
+      <DimensionsProvider>
+        <Game />
+      </DimensionsProvider>
+    </SafeAreaProvider>
   );
 };
