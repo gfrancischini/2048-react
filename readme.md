@@ -7,11 +7,15 @@
   
 </p>
 
-<video src='./doc/slide_game_2048.mov' width="600">
+[<video src='./doc/slide_game_2048.mov' width="600">](https://github.com/gfrancischini/2048-react/assets/12496146/d2e05041-1666-4e9b-a8e0-836518b6ed42)
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
+
+
+
+
 
 - [Table of Contents](#table-of-contents)
 - [About](#about)
