@@ -204,6 +204,7 @@ export const Tile = ({tile}: Props) => {
         return <Tile tile={tile} key={tile.uniqueKeyValue} />;
       })}
       <Animated.View
+        testID={`AnimatedTile-${tile.uniqueKeyValue}`}
         style={[
           styles.tile,
           tileStyle,
@@ -218,7 +219,7 @@ export const Tile = ({tile}: Props) => {
             ],
           },
         ]}>
-        <Text style={[styles.tileText, tileTextStyle]}>{tile.value}</Text>
+        <Text testID={`TextTile-${tile.uniqueKeyValue}`} style={[styles.tileText, tileTextStyle]}>{tile.value}</Text>
       </Animated.View>
     </React.Fragment>
   );

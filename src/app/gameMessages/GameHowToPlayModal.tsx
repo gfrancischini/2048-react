@@ -65,8 +65,9 @@ export const GameHowToPlayModal = (props: IGameHowToPlayModalProps) => {
       onRequestClose={() => {
         props.onModalDismiss();
       }}
+      
     >
-      <View style={styles.centeredView}>
+      <View style={styles.centeredView} testID='gameHowToPlayModal'>
         <View style={styles.modalView}>
           <Text style={styles.modalText}>
             Slide your fingers on the screen to left, right, top or bottom to

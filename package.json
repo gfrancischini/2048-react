@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.17.11",
+    "@testing-library/react-native": "^12.1.2",
     "@types/react": "~18.0.27",
     "expo": "~48.0.18",
     "expo-status-bar": "~1.4.4",
@@ -23,6 +24,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@testing-library/jest-native": "^5.4.2",
+    "@types/jest": "^29.5.2",
+    "@types/react-test-renderer": "^18.0.0",
     "eslint": "^8.42.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8"
@@ -32,8 +36,22 @@
     "preset": "jest-expo",
     "transformIgnorePatterns": [
       "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js",
+      "!.eslintrc.js",
+      "!.prettierrc.js"
+    ],
+    "setupFiles": [
+      "./jestSetupFile.js"
+    ],
+    "setupFilesAfterEnv": [
+      "./jestSetupFileAfterEnv.js"
     ]
   }
-  
-  
 }
