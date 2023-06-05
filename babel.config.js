@@ -1,13 +1,6 @@
-module.exports = api => {
-  const babelEnv = api.env();
-  const plugins = [];
-
-  if (babelEnv !== 'development') {
-    // remove console logs from production build
-    plugins.push(['transform-remove-console']);
-  }
+module.exports = function (api) {
+  api.cache(true);
   return {
-    presets: ['module:metro-react-native-babel-preset'],
-    plugins,
+    presets: ['babel-preset-expo'],
   };
 };

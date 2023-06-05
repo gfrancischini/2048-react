@@ -1,8 +1,8 @@
 import React from 'react';
-import {DimensionsProvider} from './app/DimensionsProvider';
-import {Game} from './app/Game';
+import {DimensionsProvider} from './src/app/DimensionsProvider';
+import {Game} from './src/app/Game';
 
-export const App = () => {
+export default () => {
   return (
     <DimensionsProvider>
       <Game />
