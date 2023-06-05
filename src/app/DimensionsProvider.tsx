@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {Dimensions} from 'react-native';
 
-interface DimensionsContext {
+export interface DimensionsContext {
   tile: {
     height: number;
     width: number;

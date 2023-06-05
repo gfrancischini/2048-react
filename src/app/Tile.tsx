@@ -5,13 +5,14 @@ import {useDimensions} from './DimensionsProvider';
 const TRAVERSE_ANIMATION_SPEED = 150;
 const POP_ANIMATION_SPEED = 100;
 import * as GameEngine from '../gameEngine/tile';
+import {convertTilePositionToPixels} from './Utils';
 
 /**
  * The tile
  * @param props
  * @returns
  */
-export const Tile = (props: ITileProps) => {
+export const Tile = ({tile}: Props) => {
   const dimensions = useDimensions();
 
   const styles = StyleSheet.create({
@@ -106,25 +107,6 @@ export const Tile = (props: ITileProps) => {
     },
   });
 
-  /**
-   * Convert tile grid position to pixel positions
-   * @param x
-   * @param y
-   * @returns
-   */
-  const convertTilePositionToPixels = (x: number, y: number) => {
-    return {
-      left:
-        x * (dimensions.tile.width + dimensions.tile.margin * 2) +
-        dimensions.tile.margin * 2,
-      top:
-        y * (dimensions.tile.height + dimensions.tile.margin * 2) +
-        dimensions.tile.margin * 2,
-    };
-  };
-
-  const {tile} = props;
-
   // animations
   const leftAnimated = useRef(new Animated.Value(0)).current;
   const topAnimated = useRef(new Animated.Value(0)).current;
@@ -137,6 +119,7 @@ export const Tile = (props: ITileProps) => {
     convertTilePositionToPixels(
       tile.previousPosition?.x ?? tile.position.x,
       tile.previousPosition?.y ?? tile.position.y,
+      dimensions.tile,
     ),
   );
 
@@ -146,10 +129,12 @@ export const Tile = (props: ITileProps) => {
       const previousPixelPosition = convertTilePositionToPixels(
         tile.previousPosition.x,
         tile.previousPosition.y,
+        dimensions.tile,
       );
       const newPixelsPosition = convertTilePositionToPixels(
         tile.getPosition().x,
         tile.getPosition().y,
+        dimensions.tile,
       );
 
       Animated.timing(leftAnimated, {
@@ -232,15 +217,14 @@ export const Tile = (props: ITileProps) => {
               {scaleY: scaleAnimated},
             ],
           },
-        ]}
-      >
+        ]}>
         <Text style={[styles.tileText, tileTextStyle]}>{tile.value}</Text>
       </Animated.View>
     </React.Fragment>
   );
 };
 
-interface ITileProps {
+interface Props {
   // tile game engine
   tile: GameEngine.Tile;
 }
