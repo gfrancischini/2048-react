@@ -4,7 +4,10 @@
 <p align="center">
   <img src="./doc/2048_logo.png" alt="Logo">
   <h3 align="center">2048 React Native Expo with Animations</h3>
+  
 </p>
+
+<video src='./doc/slide_game_2048.mov' width="600">
 
 <!-- TABLE OF CONTENTS -->
 
