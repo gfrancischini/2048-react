@@ -9,6 +9,7 @@ import {GridContainer} from './grid/GridContainer';
 import {Heading} from './header/Header';
 import {getData, setData} from './storage';
 import {TileContainer} from './TileContainer';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 let gameManager: GameManager = new GameManager(4);
 
@@ -146,7 +147,7 @@ export const Game = () => {
   };
 
   return (
-    <>
+    <SafeAreaView>
       {showModal === 'WON' ||
         (showModal === 'OVER' && (
           <GameWonOverModal
@@ -167,6 +168,6 @@ export const Game = () => {
           <TileContainer tiles={tiles} />
         </View>
       </View>
-    </>
+    </SafeAreaView>
   );
 };

@@ -44,11 +44,11 @@ const buildDimensions = (): DimensionsContext => {
     },
 
     fontSize: {
-      verySmall: 8 * scale,
-      small: 16 * scale,
-      medium: 20 * scale,
-      large: 27 * scale,
-      extraLarge: 32 * scale,
+      verySmall: 6 * scale,
+      small: 8 * scale,
+      medium: 10 * scale,
+      large: 14 * scale,
+      extraLarge: 20 * scale,
     },
   };
 };

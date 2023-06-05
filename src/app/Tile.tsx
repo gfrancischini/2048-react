@@ -67,42 +67,42 @@ export const Tile = (props: ITileProps) => {
     },
     tile128Text: {
       color: '#f9f6f2',
-      fontSize: dimensions.fontSize.extraLarge,
+      fontSize: dimensions.fontSize.large,
     },
     tile256: {
       backgroundColor: '#edcc62',
     },
     tile256Text: {
       color: '#f9f6f2',
-      fontSize: dimensions.fontSize.extraLarge,
+      fontSize: dimensions.fontSize.large,
     },
     tile512: {
       backgroundColor: '#edc950',
     },
     tile512Text: {
       color: '#f9f6f2',
-      fontSize: dimensions.fontSize.extraLarge,
+      fontSize: dimensions.fontSize.large,
     },
     tile1024: {
       backgroundColor: '#edc53f',
     },
     tile1024Text: {
       color: '#f9f6f2',
-      fontSize: dimensions.fontSize.large,
+      fontSize: dimensions.fontSize.medium,
     },
     tile2048: {
       backgroundColor: '#edc22e',
     },
     tile2048Text: {
       color: '#f9f6f2',
-      fontSize: dimensions.fontSize.large,
+      fontSize: dimensions.fontSize.medium,
     },
     tilesuper: {
       backgroundColor: '#3c3a33',
-      fontSize: dimensions.fontSize.medium,
     },
     tilesuperText: {
       color: '#f9f6f2',
+      fontSize: dimensions.fontSize.small,
     },
   });
 
